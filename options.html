@@ -1,0 +1,53 @@
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>Option</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1">
+        <div class="form-horizontal">
+          <fieldset>
+
+            <div id="result"></div>
+            <legend>Option : </legend>
+            <div class="form-group">
+              <label for="webhookurl" class="col-sm-3 control-label">Webhook URL</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="webhookurl" placeholder="Webhook URL">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="channel" class="col-sm-3 control-label">Post to Channel</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="channel" placeholder="Post to Channel">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="username" class="col-sm-3 control-label">User Name</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="username" placeholder="User Name">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-6 col-sm-offset-3">
+                <button id="save" class="btn btn-primary">Save</button>
+                <button id="close" class="btn btn-default">Close</button>
+              </div>
+            </div>
+
+          </fieldset>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/options.js"></script>
+  </body>
+</html>
