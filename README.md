@@ -10,7 +10,7 @@ This Chrome Extension sends the URL of the currently open page to Webhook.
 
 1. git clone  
 ```
-git clone https://github.com/sk39kii/CheckShadyFile.git
+git clone https://github.com/sk39kii/URL2Webhook.git
 ```
 
 2. Load in Chrome  
