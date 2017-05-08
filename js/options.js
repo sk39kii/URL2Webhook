@@ -1,9 +1,9 @@
 (function() {
   $("#save").click(function() {
     if (saveStrage()) {
-      setResult(true, "Please click the close button.");
+      setResult(true, "Please click the close button.", true);
     } else {
-      setResult(false, "Please restart chrome and try again.");
+      setResult(false, "Please restart chrome and try again.", true);
     }
   });
 

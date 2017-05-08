@@ -5,6 +5,7 @@
       localStorage.setItem('webhookurl', $("#webhookurl").val());
       localStorage.setItem('channel', $("#channel").val());
       localStorage.setItem('username', $("#username").val());
+      localStorage.setItem('unfurl_links', $("input[name=unfurl_links]:checked").val());
     } catch(e) {
       ret = false;
     }
@@ -15,6 +16,12 @@
     $("#webhookurl").val(localStorage.getItem('webhookurl'));
     $("#channel").val(localStorage.getItem('channel'));
     $("#username").val(localStorage.getItem('username'));
+    $("#username").val(localStorage.getItem('username'));
+    if(localStorage.getItem('unfurl_links') == "yes") {
+      $("input[name=unfurl_links]:eq(0)").prop('checked', true);
+    } else {
+      $("input[name=unfurl_links]:eq(1)").prop('checked', true);
+    }
   };
 
   var setResult = function(is_success, guide_msg) {
