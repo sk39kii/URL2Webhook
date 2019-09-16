@@ -6,7 +6,12 @@
     <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
-    <h4 class="text-center">Throw bookmarks into Webhook</h4>
+    <h4 class="text-center">Throw bookmarks into AInBox</h4>
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1">
+        <div id="result"></div>
+      </div>
+    </div>
     <div class="row">
       <div class="col-xs-10 col-xs-offset-1">
         <div class="well">
@@ -21,38 +26,6 @@
             </div>
 
             <div class="form-group">
-              <label for="channel" class="col-sm-2 control-label">Post to Channel</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control input-sm" id="channel" placeholder="Post to Channel">
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="username" class="col-sm-2 control-label">User Name</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control input-sm" id="username" placeholder="User Name">
-              </div>
-            </div>
-
-            <!--
-            <div class="form-group">
-              <label for="username" class="col-sm-2 control-label">Unfurl links</label>
-              <div class="col-sm-10">
-                <div class="radio">
-                  <label class="checkbox-inline">
-                    <input type="radio" name="unfurl_links" id="unfurl_links_yes" value="yes" checked="">
-                    yes
-                  </label>
-                  <label class="checkbox-inline">
-                    <input type="radio" name="unfurl_links" id="unfurl_links_no" value="no">
-                    no
-                  </label>
-                </div>
-              </div>
-            </div>
-            -->
-
-            <div class="form-group">
               <label for="pagetitle" class="col-sm-2 control-label">Title</label>
               <div class="col-sm-10">
                 <input type="text" class="form-control input-sm" id="pagetitle" tabindex="1" placeholder="">
@@ -63,6 +36,14 @@
               <label for="pageurl" class="col-sm-2 control-label">URL</label>
               <div class="col-sm-10">
                 <input type="text" class="form-control input-sm " id="pageurl" tabindex="2" placeholder="">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="pagetitle" class="col-sm-2 control-label">Free Memo</label>
+              <div class="col-sm-10">
+                <textarea id="memo" name="memo" rows="4" maxlength="20" placeholder="" class="form-control input-sm " style="width: 100%;"></textarea>
+
               </div>
             </div>
 
